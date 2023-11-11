@@ -16,7 +16,7 @@ def newton_method(function, initial_guess, derivative_step, max_steps, precision
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Demo program finding zero points using Newton\'s method')
+    parser = argparse.ArgumentParser(description='Demo program finding zero points using Newton method')
     parser.add_argument('function', type=str, help='Function for finding zero points')
     parser.add_argument('-i', '--initial_guess', type=float, default=0, help='Initial guess (default: 0)')
     parser.add_argument('-s', '--derivative_step', type=float, default=0.001,
