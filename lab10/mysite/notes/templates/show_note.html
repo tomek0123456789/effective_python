@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Szczegóły notatki</title>
+</head>
+<body>
+    <h2>Szczegóły notatki</h2>
+    <h3>Tytuł: {{ note.title }}</h3>
+    <h3>Stworzono przez: {{ note.created_by.username }}</h3>
+    <h3>Temat: {{ note.topic }}</h3>
+    <p>Treść:</p>
+    <p>{{ note.contents }}</p>
+    <!-- Dodatkowe informacje o notatce, jeśli są -->
+
+</body>
+</html>

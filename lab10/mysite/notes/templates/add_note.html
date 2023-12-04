@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dodaj notatkę</title>
+</head>
+<body>
+    <h2>Dodaj notatkę</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Dodaj notatkę</button>
+    </form>
+</body>
+</html>

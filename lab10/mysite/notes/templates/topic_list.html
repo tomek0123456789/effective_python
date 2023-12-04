@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista tematów</title>
+</head>
+<body>
+    <h1>Lista tematów</h1>
+    <ul>
+        {% for topic in object_list %}
+            <li>
+                <a href="{% url 'show-topic' topic.pk %}">{{ topic.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
